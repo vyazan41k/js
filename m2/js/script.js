@@ -1,4 +1,4 @@
-// удаление
+// // удаление
 
 // const array = [1, 2, 3, 4, 5];
 // const deletedArray = array.splice(2, 2);
@@ -6,7 +6,7 @@
 // console.log(deletedArray);
 // console.log(array);
 
-// вставка
+// // вставка
 
 // array.splice(1, 0, "link", "link2");
 // console.log(array);
@@ -16,7 +16,7 @@
 // array.splice(1, 1, "l", "2222");
 // console.log(array);
 
-// Область видимотси
+// // Область видимоcти
 
 // var var1 = "string";
 
@@ -27,9 +27,9 @@
 
 // console.log(var1);
 
-// функция
+// // функция
 
-// функциональное выражение
+// // функциональное выражение
 
 // const generateRandomNumber = function(from = 0, to = 100) {
 //   //   console.log("FROM:", from);
