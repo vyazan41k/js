@@ -1,35 +1,31 @@
-// const formatString = function(string) {
-//   let items = string.split('');
+const countTotalSalary = function(employees) {
+    const values = Object.values(employees);
+    let total = 0;
 
-//   let result;
-//   let excess;
+    for (const value of values) {
+        total += value;
+      }
 
-//   if (items.length <= 40) {
-
-//     return string;
-//   } 
-//   excess = items.splice(40, 100, '...');
-//   result = items.join('');
-
-//   return result;
-
-// };
-
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-// // вернется оригинальная строка
-
-// console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-// // вернется форматированная строка
-
-// console.log(formatString('Curabitur ligula sapien.'));
-// // вернется оригинальная строка
-
-// console.log(
-//   formatString(
-//     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-//   ),
-// );
-// // вернется форматированная строка
+      return total;
+  };
+  
+  /*
+   * Вызовы функции для проверки работоспособности твоей реализации.
+   */
+  console.log(countTotalSalary({})); // 0
+  
+  console.log(
+    countTotalSalary({
+      mango: 100,
+      poly: 150,
+      alfred: 80,
+    }),
+  ); // 330
+  
+  console.log(
+    countTotalSalary({
+      kiwi: 200,
+      lux: 50,
+      chelsy: 150,
+    }),
+  ); // 400
